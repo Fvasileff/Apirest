@@ -1,0 +1,32 @@
+###//Crear Usuarios
+POST http://127.0.0.1:3001/api/bar/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "mesas": 6,
+    "sillas": 24,
+    "horario": "20hs",
+    "carta": "Pizza",
+    "bebidas": "SevenUp"
+}
+
+###//Ver todos los Usuarios
+GET http://127.0.0.1:3001/api/bar/ HTTP/1.1
+
+###//Ver un usuario Especifico por ID
+GET http://127.0.0.1:3001/api/bar/66302096bae13ef2254a68b8/ HTTP/1.1
+
+###//Actualizar un Usuario
+PUT http://127.0.0.1:3001/api/bar/66302096bae13ef2254a68b8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "mesas": 5,
+    "sillas": 20,
+    "horario": "21hs",
+    "carta": "hamburguesas",
+    "bebidas": "Coca"
+}
+
+###//Borrar un Usuario
+DELETE http://127.0.0.1:3001/api/bar/6630246208e5472e6159574c HTTP/1.1
